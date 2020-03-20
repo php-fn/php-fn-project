@@ -8,7 +8,11 @@
     ],
     "require": {
         "php-fn/php-fn": "dev-master",
+        "php-fn/invoker": "dev-php-fn-master",
         "php": ">=7.1"
+    },
+    "require-dev": {
+        "php-fn/test": "dev-master"
     },
     "minimum-stability": "dev"
 }
