@@ -1,0 +1,14 @@
+{
+    "name": "php-fn/project",
+    "type": "project",
+    "homepage": "https://github.com/php-fn/php-fn-project",
+    "license": "MIT",
+    "repositories": [
+        {"type": "path", "url": "resources/vendor/*"}
+    ],
+    "require": {
+        "php-fn/php-fn": "dev-master",
+        "php": ">=7.1"
+    },
+    "minimum-stability": "dev"
+}
