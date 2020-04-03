@@ -12,7 +12,27 @@
         "php": ">=7.1"
     },
     "require-dev": {
+        "doctrine/annotations": "^1",
+        "composer/composer": "^1",
+        "php-coveralls/php-coveralls": "^2.1",
         "php-fn/test": "dev-master"
     },
-    "minimum-stability": "dev"
+    "autoload-dev": {
+        "psr-4": {
+            "Invoker\\Test\\": "resources/vendor/php-fn-invoker/tests",
+            "Php\\": [
+                "resources/vendor/php-fn/tests/Php",
+                "resources/vendor/php-fn-test/tests/php"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": [
+            "phpunit -d error_reporting=22527 --fail-on-warning resources/vendor/php-fn/tests",
+            "phpunit -d error_reporting=22527 --fail-on-warning resources/vendor/php-fn-test/tests",
+            "phpunit -d error_reporting=22527 --fail-on-warning resources/vendor/php-fn-invoker/tests"
+        ]
+    }
 }
