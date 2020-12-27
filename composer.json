@@ -9,14 +9,15 @@
     "require": {
         "php-fn/php-fn": "dev-master",
         "php-fn/invoker": "dev-php-fn-master",
-        "php": ">=7.1"
+        "php": "^7.3|^8.0"
     },
     "require-dev": {
         "doctrine/annotations": "^1",
         "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-        "composer/composer": "^1",
+        "composer/composer": "^1.0||^2.0",
         "php-coveralls/php-coveralls": "^2.1",
-        "php-fn/test": "dev-master"
+        "php-fn/test": "dev-master",
+        "ext-json": "*"
     },
     "autoload-dev": {
         "psr-4": {
